@@ -1,0 +1,21 @@
+No files changed, compilation skipped
+
+Running 9 tests for test/FundMeTest.t.sol:FundMeTest
+[32m[PASS][0m testAddsFunderToArrayOfFunders() (gas: 97608)
+[32m[PASS][0m testFundFailsWithoutEnouthEth() (gas: 20859)
+[32m[PASS][0m testFundUpdatesFundedDataStructure() (gas: 97261)
+[32m[PASS][0m testMinimumDollarIsFive() (gas: 5472)
+[32m[PASS][0m testOnlyOwnerCanWithdraw() (gas: 99903)
+[32m[PASS][0m testOwnerIsMessageSender() (gas: 11827)
+[32m[PASS][0m testPriceFeedVerionIsAccurate() (gas: 8610)
+[32m[PASS][0m testWithdrawWithASingleFunder() (gas: 87774)
+[31m[FAIL. Reason: assertion failed][0m testWithdrawWithMultipleFunders() (gas: 499848)
+Test result: [31mFAILED[0m. [32m8[0m passed; [31m1[0m failed; [33m0[0m skipped; finished in 1.30ms
+ 
+Ran 1 test suites: [32m8[0m tests passed, [31m1[0m failed, [33m0[0m skipped (9 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/FundMeTest.t.sol:FundMeTest
+[31m[FAIL. Reason: assertion failed][0m testWithdrawWithMultipleFunders() (gas: 499848)
+
+Encountered a total of [31m1[0m failing tests, [32m8[0m tests succeeded

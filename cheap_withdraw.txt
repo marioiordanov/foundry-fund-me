@@ -1,0 +1,50 @@
+Compiling 1 files with 0.8.18
+Solc 0.8.18 finished in 1.10s
+Compiler run [32msuccessful![0m
+
+Running 1 test for test/FundMeTest.t.sol:FundMeTest
+[31m[FAIL. Reason: assertion failed][0m testWithdrawWithMultipleFunders() (gas: 499848)
+Test result: [31mFAILED[0m. [32m0[0m passed; [31m1[0m failed; [33m0[0m skipped; finished in 1.94ms
+| script/DeployFundMe.s.sol:DeployFundMe contract |                 |         |         |         |         |
+|-------------------------------------------------|-----------------|---------|---------|---------|---------|
+| Deployment Cost                                 | Deployment Size |         |         |         |         |
+| 1538436                                         | 8123            |         |         |         |         |
+| Function Name                                   | min             | avg     | median  | max     | # calls |
+| run                                             | 1389997         | 1389997 | 1389997 | 1389997 | 1       |
+
+
+| script/HelperConfig.s.sol:HelperConfig contract |                 |     |        |     |         |
+|-------------------------------------------------|-----------------|-----|--------|-----|---------|
+| Deployment Cost                                 | Deployment Size |     |        |     |         |
+| 890063                                          | 4089            |     |        |     |         |
+| Function Name                                   | min             | avg | median | max | # calls |
+| activeNetworkConfig                             | 381             | 381 | 381    | 381 | 1       |
+
+
+| src/FundMe.sol:FundMe contract |                 |       |        |       |         |
+|--------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                | Deployment Size |       |        |       |         |
+| 430215                         | 2233            |       |        |       |         |
+| Function Name                  | min             | avg   | median | max   | # calls |
+| cheaperWithdraw                | 6660            | 6660  | 6660   | 6660  | 1       |
+| fund                           | 46808           | 50048 | 46808  | 79208 | 10      |
+| getOwner                       | 320             | 820   | 320    | 2320  | 4       |
+
+
+| test/mocks/MockV3Aggregator.sol:MockV3Aggregator contract |                 |      |        |      |         |
+|-----------------------------------------------------------|-----------------|------|--------|------|---------|
+| Deployment Cost                                           | Deployment Size |      |        |      |         |
+| 377261                                                    | 1441            |      |        |      |         |
+| Function Name                                             | min             | avg  | median | max  | # calls |
+| latestRoundData                                           | 993             | 1793 | 993    | 8993 | 10      |
+
+
+
+ 
+Ran 1 test suites: [32m0[0m tests passed, [31m1[0m failed, [33m0[0m skipped (1 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/FundMeTest.t.sol:FundMeTest
+[31m[FAIL. Reason: assertion failed][0m testWithdrawWithMultipleFunders() (gas: 499848)
+
+Encountered a total of [31m1[0m failing tests, [32m0[0m tests succeeded
